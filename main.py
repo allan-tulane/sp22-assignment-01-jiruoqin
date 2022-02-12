@@ -40,4 +40,12 @@ def longest_run_recursive(mylist, key):
 def test_longest_run():
     assert longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
 
-
+def test_foo():
+  assert foo(0) == 0
+  assert foo(1) == 1
+  assert foo(2) == 1
+  assert foo(3) == 2
+  assert foo(4) == 3
+  assert foo(5) == 5
+  assert foo(6) == 8
+  assert foo(7) == 13
