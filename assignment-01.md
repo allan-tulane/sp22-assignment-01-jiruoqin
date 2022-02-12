@@ -2,7 +2,7 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:** Ruoqin Ji
 
 
 In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
@@ -12,35 +12,36 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. (2 pts ea) **Asymptotic notation** (12 pts)
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  
-.  
-.  
-.  
+.  Yes. 
+.  $\lim_{n \to \infin} \frac{2^{n+1}}{2^n}=\lim_{n \to \infin}2=2$
+.  It follows that $2^{n+1} \in \Theta{2^n}$
+.  Therefore, $2^{n+1} \in O(2^n)$
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.  
-.  
-.  
+.  No.
+.  $\lim_{n \to \infin} \frac{2^{2^n}}{2^n}=2^{\lim_{n \to \infin}{(2^n-n)}}=\infin$
+.  It follows that $2^{2^n} \in \Omega({2^n})$
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
-.  
-.  
-.  
+.  No.
+.  $\lim_{n \to \infin} \frac{n^{1.01}}{\mathrm{log}^2 n}=\lim_{n \to \infin}\frac{n}{\log{n}}=\lim_{n \to \infin}n = \infin$
+.  It follows that $n^{1.01} \in \Omega(\mathrm{log}^2 n)$
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.  
-.  
+.  Yes.
+.  As question 1c stated.
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.  
-.  
-.  
+.  No.
+.  $\lim_{n \to \infin} \frac{\sqrt{n}}{(\mathrm{log} n)^3}=\infin$ (by calculator) 
+.  It follows that $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
-.  
+.  Yes.
+.  As question 1e stated. 
 
 
 2. **SPARC to Python** (12 pts)
@@ -129,4 +130,3 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 .  
 .  
 .  
-
