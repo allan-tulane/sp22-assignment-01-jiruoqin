@@ -63,14 +63,10 @@ $$
 
   - 2b. (6 pts) What does this function do, in your own words?  
 
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
+.  Function `foo` takes one parameter $x$ and returns the value of index $x$ (starting from 0) in Fibonacci sequence. 
+.  Since each number in Fibonacci sequence is the sum of the preceding numbers, `foo` recursively factors the initial Fibonacci[x] into a combination of Fibonacci[0] and Fibonacci[1] by calling itself again and again.
+.  Since we know that Fibonacci[0] is 0 and Fibonacci[1] is 1, we can obtain the value of Fibonacci[x] by summing up such combination of 0a and 1s. 
+
   
 
 3. **Parallelism and recursion** (26 pts)
