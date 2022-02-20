@@ -16,6 +16,17 @@ def foo(x):
 
 def longest_run(mylist, key):
     ### TODO
+    strikeMax = 0
+    strikeCurr = 0
+    for i in range(len(mylist)):
+        if mylist[i] == key:
+            strikeCurr += 1
+        else:
+            if strikeCurr > strikeMax:
+                strikeMax = strikeCurr
+            strikeCurr = 0
+    return strikeMax
+
     pass
 
 

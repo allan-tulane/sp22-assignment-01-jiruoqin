@@ -92,9 +92,9 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3b. (4 pts) What is the Work and Span of this implementation?  
 
+.  **Answer:** The work of `longest_run` is $O(n)$. Since the work of programs measures how rumtime changes respect to input size $n$, though there are two if statement in the function `longest_run`, the only affecting factor is that `for loop`. Therefore, the total runtime should be $kn$ where $k$ is an arbitrary constant and $n$ is the input size, which $kn$ is included by the upper bound $O(n)$
 .  
-.  
-.  
+. Since there is no parallelism involved in the function `longest_run`, its span should be the same as its work, $O(n)$
 .  
 .  
 .  
