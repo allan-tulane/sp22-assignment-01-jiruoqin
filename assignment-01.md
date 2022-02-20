@@ -107,7 +107,8 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3d. (4 pts) What is the Work and Span of this sequential algorithm?  
 .  
-.  
+.  **Answer:** I would assume that the `sequential` in the question is a typo, and it refers to the `longest_run_recursive` function.
+The total work is $O(n)$. Since span is the longest sequence of dependencies in computation, and function `longest_run_recursive` divide the input list with size $n$ binarily til the end, then the span is $log_2(n)$
 .  
 .  
 .  
@@ -121,7 +122,7 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3e. (4 pts) Assume that we parallelize in a similar way we did with `sum_list_recursive`. That is, each recursive call spawns a new thread. What is the Work and Span of this algorithm?  
 
-.  
+.  Since the basic structure of `sum_list_recursive` is the same as function `longest_run_recursive`, their work and span should be the same, which are $O(n)$ and $O(log_2(n))$
 .  
 .  
 .  
